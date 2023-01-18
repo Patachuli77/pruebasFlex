@@ -1,0 +1,37 @@
+/*Jorge Ortega*/
+header{
+	text-align:center;
+}
+div.fila{
+	display:flex;
+    gap: 30px;/*Distancia entre los elementos*/
+	margin-bottom:5px;
+	padding:5px;
+}
+div#primero{
+    flex-grow: 3;/*Del espacio sobrante coje 3 trozos para aumentarse*/
+    flex-shrink: 3;	/*Del espacio que falte se reduce 3 trozos*/
+	align-self: center;/*El elementos se alinea en el centro*/
+	max-width: 40%;
+}
+div#primero img{
+    width:100%;
+    height: auto;
+}
+div.intermedio{
+    display:flex;
+    flex-direction: column-reverse;/*Salen en columna en orden inverso*/
+    flex-grow: 2;/*Del espacio que sobre coje 2 trozos para aumentarse*/
+    justify-content: space-evenly;/*Los elemtos de dentro se separan en la misma medida*/
+	flex-wrap:wrap;
+}
+div.intermedio div{
+    border: 1px solid black;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+div#final{
+	align-self: center;/*El elementos se alinea en el centro*/
+}
