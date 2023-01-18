@@ -1,0 +1,96 @@
+/*Jorge Ortega Rivera*/
+h1{
+    text-align: center;
+}
+/*El contenedor flex usado generalmente*/
+div.flex{
+    display: flex;
+    background-color: aquamarine;
+    width: 70%;
+}
+/*La propiedad row y reverse row del flex direction*/
+div#directionR{
+    flex-direction: row;
+}
+div#directionR:hover{
+    flex-direction: row-reverse;
+}
+/*La propiedad column y reverse column del flex direction*/
+div#directionC{
+  flex-direction: column;
+}
+div#directionC:hover{
+    flex-direction: column-reverse;
+}
+/*Popiedad wrap y wrap reverse*/
+div#wrap{
+    width:400px;
+    flex-wrap: wrap;
+}
+div#wrap:hover{
+    flex-wrap: wrap-reverse;
+}
+/*Propiedad Flex grow flex shrink*/
+div.grow1{
+    flex-grow: 1;
+}
+div.grow2{
+    flex-grow: 3;
+}
+div#contenedorShrink{
+    width:35%;/*cambio el ancho del contenedor para mejor visualizacion de la propiedad*/
+}
+div.shrink1{
+    flex-shrink: 0;
+}
+div.shrink2{
+    flex-shrink: 3;
+}
+/*Contenedor para ejercicio practico*/
+div.flexPractico{
+    display: flex;
+    background-color: chartreuse;
+    width: 700px;
+    gap: 30px 10px;
+    padding: 20px;
+}
+div#redPract{
+    background-color: red;
+    flex-grow: 3;
+}
+div.flexDual{
+    display: flex;
+    flex-direction: column-reverse;
+}
+div#goldPract{
+    background-color: gold;
+}
+div#greenPract{
+    background-color: green;
+
+}
+div#pinkPract{
+    background-color: pink;
+    flex-grow: 1;
+
+}
+/*Las cajas de prueba que van dentro del flex*/
+div.CP{
+    border:1px solid black;
+    width:150px;
+    height: 100px;
+    text-align: center;
+}
+/*Colores para diferenciar las 4 cajas de dentro del flex*/
+div#red{
+    background-color: red;
+}
+div#gold{
+    background-color: gold;
+}
+div#green{
+    background-color: green;
+}
+div#pink{
+    background-color: pink;
+}
