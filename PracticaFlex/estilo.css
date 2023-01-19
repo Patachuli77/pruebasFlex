@@ -7,12 +7,12 @@ div.fila{
     gap: 30px;/*Distancia entre los elementos*/
 	margin-bottom:5px;
 	padding:5px;
+	align-items: center;/*Los elementos se alinean en el centro*/
 }
 div#primero{
     flex-grow: 3;/*Del espacio sobrante coje 3 trozos para aumentarse*/
     flex-shrink: 3;	/*Del espacio que falte se reduce 3 trozos*/
-	align-self: center;/*El elementos se alinea en el centro*/
-	max-width: 40%;
+	max-width: 40%;/*Aunque el contenedor crezca no va a superar el 40% del ancho*/
 }
 div#primero img{
     width:100%;
@@ -23,7 +23,7 @@ div.intermedio{
     flex-direction: column-reverse;/*Salen en columna en orden inverso*/
     flex-grow: 2;/*Del espacio que sobre coje 2 trozos para aumentarse*/
     justify-content: space-evenly;/*Los elemtos de dentro se separan en la misma medida*/
-	flex-wrap:wrap;
+	align-self:stretch;/*Ocupa el alto del contenedor*/
 }
 div.intermedio div{
     border: 1px solid black;
@@ -33,5 +33,12 @@ div.intermedio div{
     text-align: center;
 }
 div#final{
-	align-self: center;/*El elementos se alinea en el centro*/
+	
 }
+/*COSAS QUE NO USO*/
+/*
+	Flex wrap
+	Align content
+	Order
+	flex-basis
+*/
